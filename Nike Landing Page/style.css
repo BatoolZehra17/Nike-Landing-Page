@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: sans-serif;
+}
+.nav-bar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    margin-left: 50px;
+}
+ul{
+    margin-left: 320px;
+}
+ul li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+a:hover{
+    color: red;
+    text-decoration: underline black;
+}
+a button{
+    background-color: rgb(213, 34, 34);
+    margin-left: 300px;
+    padding: 5px 15px ;
+    font-size: 18px;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+.container{
+    padding-top: 150px;
+    padding-left: 130px;
+
+}
+.header{
+    font-size: 100px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial Black;
+   
+}
+.para{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(79, 77, 77);
+    padding-top: 40px;
+    line-height: 1.5;
+}
+.shop{
+    margin-top: 25px;
+    background-color: rgb(213, 34, 34);
+    border-style: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+.category{
+    background-color: white;
+    color: rgb(99, 92, 92);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin-left: 30px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1.5px solid rgb(56, 52, 52);
+    border-bottom: 1.5px solid rgb(54, 51, 51) ;
+    cursor: pointer;
+}
+.text{
+    color: rgb(99, 92, 92);
+    font-size: 15px;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.facebook{
+    width: 60px;
+}
+.amazon{
+    width: 60px;
+    margin-left:-20px ;
+    transform: translateY(-5px);
+}
+.pic-container{
+    margin-left: 700px;
+    transform: translateY(-520px);
+    filter: drop-shadow(10px 35px 22px rgb(114, 110, 110));
+    
+}
+@media (max-width: 760px) {
+    .nav-bar {
+        flex-direction: row; /* Stack the elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    ul {
+        flex-direction: row; /* Stack navigation links vertically */
+        margin-left: 0; /* Remove the left margin */
+        padding: 0; /* Remove padding for better alignment */
+    }
+     a{
+        margin-right: 10px;
+        margin-top: -4px;
+     }
+    #logo {
+        margin-left: 0; /* Adjust the logo margin */
+    }
+
+    a button {
+        margin-left: 0; /* Remove the left margin for the button */
+        margin-top: 5px; /* Add some spacing from the menu */
+        align-self: flex-end; /* Align the button to the right */
+    }
+
+    .header {
+        font-size: 66px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .shop, .category {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .pic-container {
+        width: 200px;
+        height: 100px;
+        margin-top: 450px;
+        margin-left: 250px;
+    }
+}
